@@ -4,8 +4,8 @@ public class App {
 
   public static int get(LinkedList list, int index) {
     var head = list.head; // 0(1)
-    for(int i = 0; i < index; i++){ // 0(n)
-      head = head.next;//0(1)
+    for (int i = 0; i < index; i++) { // 0(n)
+      head = head.next; // 0(1)
     }
     return head.data; // 0(1)
   }//0(n)final algorithimic complexity
@@ -37,13 +37,13 @@ public class App {
   
 
   public static boolean isSortedAscending(LinkedList list) {
-    for(int i = 0; i < list.length(); i++){//0(n)
-      if(list.head.data > list.head.next.data){//0(n)
-        return false;//0(1)
+    for (int i = 0; i < list.length(); i++) { // 0(n)
+      if (list.head.data > list.head.next.data) { // 0(n)
+        return false; // 0(1)
       }
-      list.head = list.head.next;//0(1)
+      list.head = list.head.next; // 0(1)
     }
-    return true;//0(1)
+    return true; // 0(1)
   }
 //0(n^2)final algorithimic complexity
   private App() {}
